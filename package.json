@@ -12,6 +12,7 @@
     "biome:check": "biome check --write ."
   },
   "dependencies": {
+    "@plasmicapp/loader-react": "^1.0.398",
     "@react-router/node": "^7.7.1",
     "@react-router/serve": "^7.7.1",
     "isbot": "^5.1.27",

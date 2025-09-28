@@ -1,4 +1,8 @@
-import { Welcome } from '../welcome/welcome';
+import {
+  PlasmicComponent,
+  PlasmicRootProvider,
+} from '@plasmicapp/loader-react';
+import { PLASMIC } from '../../utils/plasmic-init';
 
 export function meta() {
   return [
@@ -8,5 +12,9 @@ export function meta() {
 }
 
 export default function Home() {
-  return <Welcome />;
+  return (
+    <PlasmicRootProvider loader={PLASMIC}>
+      <PlasmicComponent component="Homepage" />
+    </PlasmicRootProvider>
+  );
 }
